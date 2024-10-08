@@ -8,7 +8,7 @@ jobs:
         steps:
 
         - name: checkout repo
-          uses: actions/checkout
+          uses: actions/checkout@v4
 
         - name: welcome message
           run: |
@@ -17,7 +17,7 @@ jobs:
               cat README.md
         - name: Generate ASCII artwork
           run: cowsay -f dragon "run for cover" >> dragon.txt
-          
+
         # - name: List files
         #   run: ls
 
