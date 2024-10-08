@@ -44,7 +44,10 @@ jobs:
           uses: actions/download-artifact@v3
           with:
             name: dragon-text-file
-            
+
+        - name: Read file
+          run: cat dragon.txt
+
         - name: checkout repo files
           run: echo "deploying...."
 
