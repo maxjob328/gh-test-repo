@@ -1,0 +1,16 @@
+name: my first Workflow
+
+on: push
+
+jobs:
+    first_job:
+        runs-on: windows-latest
+        steps:
+        - name: welcome message
+          run: echo "my first Github action Job"
+        
+        - name: List files
+          run: ls
+
+        - name: read file
+          run: cat README.md
